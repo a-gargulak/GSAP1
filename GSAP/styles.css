@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: gray;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+
+.about-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+
+.contact-section {
+    padding: 100px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    flex-basis: 60%;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+form button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff5722;
+}
+
+.social-links {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-links a {
+    color: #ff9800;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links a:hover {
+    color: #ff5722;
+}
+
+
+footer {
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+
+.hero {
+    height: 100vh;
+    background: url('https://blog-media.byjusfutureschool.com/bfs-blog/2022/08/18080659/Article-Page-61.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+}
+
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.cta-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 12px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff5722;
+}
